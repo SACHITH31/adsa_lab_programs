@@ -12,7 +12,7 @@ void bfs (int adj[MAX][MAX], int v, int s) {
 
     while (front < rear) {
         int curr = q[front++];
-        printf("%d ", curr);
+        printf("%d", curr);
 
         for (int i = 0; i < v; i++) {
             if (adj[curr][i] == 1 && !visited[i]) {
@@ -21,7 +21,7 @@ void bfs (int adj[MAX][MAX], int v, int s) {
             }
         }
     }
-}
+} 
 
 void addEdge (int adj[MAX][MAX], int u, int v) {
     adj[u][v] = 1;
